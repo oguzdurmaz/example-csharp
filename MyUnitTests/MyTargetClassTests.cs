@@ -6,7 +6,7 @@ namespace MyUnitTests
     public class MyTargetClassTests
     {
         [Fact]
-        public void Summary()
+        public void Summary_WhenTwoIntegersAreProvided_ShouldReturnTotalAsInteger()
         {
             // Arrange
             MyTargetClass summtest = new MyTargetClass();
@@ -17,7 +17,7 @@ namespace MyUnitTests
         }
 
         [Fact]
-        public void Subtract()
+        public void Subtract_WhenTwoIntegersAreProvided_ShouldReturnTotalAsInteger()
         {
             // Arrange
             MyTargetClass subtracttest = new MyTargetClass();
@@ -28,7 +28,7 @@ namespace MyUnitTests
         }
 
         [Fact]
-        public void Divide()
+        public void Divide_WhenTwoIntegersAreProvided_ShouldReturnTotalAsInteger()
         {
             // Arrange
             MyTargetClass dividetest = new MyTargetClass();
@@ -39,7 +39,7 @@ namespace MyUnitTests
         }
         
         [Fact]
-        public void Multiple()
+        public void Multiple_WhenTwoIntegersAreProvided_ShouldReturnTotalAsInteger()
         {
             // Arrange
             MyTargetClass multipletest = new MyTargetClass();
