@@ -5,13 +5,19 @@ namespace MyUnitTests
 {
     public class MyTargetClassTests
     {
+        static class Constants
+        {
+            public const int Firstnumber = 15;
+            public const int Secondnumber = 10;
+        }
+
         [Fact]
         public void Summary_WhenTwoIntegersAreProvided_ShouldReturnTotalAsInteger()
         {
             // Arrange
             MyTargetClass summtest = new MyTargetClass();
             // Act
-            int actual = summtest.AddNumbers(15,10);
+            int actual = summtest.AddNumbers(Constants.Firstnumber, Constants.Secondnumber);
             //Assert
             Assert.Equal(25, actual);
         }
@@ -22,7 +28,7 @@ namespace MyUnitTests
             // Arrange
             MyTargetClass subtracttest = new MyTargetClass();
             // Act
-            int actual = subtracttest.SubractNumbers(15,10);
+            int actual = subtracttest.SubractNumbers(Constants.Firstnumber, Constants.Secondnumber);
             //Assert
             Assert.Equal(5, actual);
         }
