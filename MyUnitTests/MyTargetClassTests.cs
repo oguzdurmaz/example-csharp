@@ -13,11 +13,9 @@ namespace MyUnitTests
         public void VerifySummation()
         {
             const int intFirstNumber = 15;
-            const int intsecondNumber = 10;
-            var objTargetClass = new MyTargetClass();
-            var intResult = objTargetClass.AddNumbers(intFirstNumber, intsecondNumber);
-            Assert.Equal(15 + 10, intResult);
+            const int intsecondNumber = 10;           
         }
+
         [Fact]
         public void Summary()
         {
@@ -35,10 +33,8 @@ namespace MyUnitTests
         {
             const int intFirstNumber = 15;
             const int intsecondNumber = 10;
-            var objTargetClass = new MyTargetClass();
-            var intResult = objTargetClass.SubractNumbers(intFirstNumber, intsecondNumber);
-            Assert.Equal(15 - 10, intResult);
         }
+
         [Fact]
         public void Subtract()
         {
@@ -55,10 +51,8 @@ namespace MyUnitTests
         {
             const int intFirstNumber = 10;
             const int intsecondNumber = 2;
-            var objTargetClass = new MyTargetClass();
-            var intResult = objTargetClass.DivideNumbers(intFirstNumber, intsecondNumber);
-            Assert.Equal(10 / 2, intResult);
         }
+
         [Fact]
         public void Divide()
         {
@@ -69,24 +63,22 @@ namespace MyUnitTests
             //Assert
             Assert.Equal(5, actual);
         }
-
+        
         [Fact]
         public void VerifyMultiple()
         {
             const int intFirstNumber = 35;
             const int intsecondNumber = 30;
-            var objTargetClass = new MyTargetClass();
-            var intResult = objTargetClass.MultipleNumbers(intFirstNumber, intsecondNumber);
-            Assert.Equal(35 * 30, intResult);
         }
+
         [Fact]
         public void Multiple()
         {
             // Arrange
             MyTargetClass multipletest = new MyTargetClass();
             // Act
-            int actual = multipletest.MultipleNumbers(35,30);
-            // Assert
+            int actual = multipletest.MultipleNumbers(35, 30);
+            //Assert
             Assert.Equal(1050, actual);
         }
 
