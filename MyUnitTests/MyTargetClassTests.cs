@@ -1,21 +1,10 @@
 ﻿using UnitTestTargetProject;
 using Xunit;
 
-
-
-
 namespace MyUnitTests
 {
     public class MyTargetClassTests
     {
-
-        [Fact]
-        public void VerifySummation()
-        {
-            const int intFirstNumber = 15;
-            const int intsecondNumber = 10;           
-        }
-
         [Fact]
         public void Summary()
         {
@@ -25,14 +14,6 @@ namespace MyUnitTests
             int actual = summtest.AddNumbers(15,10);
             //Assert
             Assert.Equal(25, actual);
-        }
-
-
-        [Fact]
-        public void VerifySubtraction()
-        {
-            const int intFirstNumber = 15;
-            const int intsecondNumber = 10;
         }
 
         [Fact]
@@ -47,13 +28,6 @@ namespace MyUnitTests
         }
 
         [Fact]
-        public void VerifyDivide()
-        {
-            const int intFirstNumber = 10;
-            const int intsecondNumber = 2;
-        }
-
-        [Fact]
         public void Divide()
         {
             // Arrange
@@ -64,13 +38,6 @@ namespace MyUnitTests
             Assert.Equal(5, actual);
         }
         
-        [Fact]
-        public void VerifyMultiple()
-        {
-            const int intFirstNumber = 35;
-            const int intsecondNumber = 30;
-        }
-
         [Fact]
         public void Multiple()
         {
