@@ -5,12 +5,6 @@ namespace MyUnitTests
 {
     public class MyTargetClassTests
     {
-        static class Constants
-        {
-            public const int Firstnumber = 15;
-            public const int Secondnumber = 10;
-        }
-
         [Fact]
         public void Summary_WhenTwoIntegersAreProvided_ShouldReturnTotalAsInteger()
         {
