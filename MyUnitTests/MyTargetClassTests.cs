@@ -48,7 +48,5 @@ namespace MyUnitTests
             //Assert
             Assert.Equal(1050, actual);
         }
-
     }
-
-    }
+}
